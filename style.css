@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(9, 83, 83);
+    height: 100vh;
+}
+.sky{
+    background-color: rgb(0, 77, 77);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    overflow: hidden;
+}
+@keyframes start_boat {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(130px);
+    }
+}
+.boat{
+    width: 110px;
+    animation-name: start_boat;
+    animation-duration: 4s;
+    transform: translateY(-10px);
+    z-index: 2;
+    animation-fill-mode: forwards;
+}
+
+.boat img{
+    width: 100%;
+    height: 100%;
+}
+.water{
+    background-color: rgb(18, 85, 85);   
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+.row{
+    margin: 50px;
+}
+@keyframes moon {
+    from{
+        width: 30px;
+        height: 30px;
+        transform: translateY(0px);
+    }
+    to{
+        width: 500px;
+        height: 500px;
+        transform: translateY(250px);
+    }
+}
+@keyframes moon1 {
+    from{
+        width: 30px;
+        height: 30px;
+        transform: translateY(0px);
+    }
+    to{
+        width: 480px;
+        height: 480px;
+        transform: translateY(px);
+    }
+}
+@keyframes moon2 {
+    from{
+        width: 30px;
+        height: 30px;
+        transform: translateY(0px);
+    }
+    to{
+        width: 450px;
+        height: 450px;
+        transform: translateY(-15px);
+    }
+}
+@keyframes moon3 {
+    from{
+        width: 30px;
+        height: 30px;
+        transform: translateY(0px);
+    }
+    to{
+        width: 400px;
+        height: 400px;
+        transform: translateY(-30px);
+    }
+}
+@keyframes moon4 {
+    from{
+        width: 30px;
+        height: 30px;
+        transform: translateY(0px);
+    }
+    to{
+        width: 350px;
+        height: 350px;
+        transform: translateY(-30px);
+    }
+}
+.moon4{
+    background-color: rgba(255, 255, 255, 0.816);
+    animation-name: moon4;
+}
+.moon{
+    background-color: rgba(255, 255, 255, 0.133);
+    animation-name: moon;
+}
+.moon1{
+    background-color: rgba(255, 255, 255, 0.297);
+    animation-name: moon1;
+}
+.moon2{
+    background-color: rgba(255, 255, 255, 0.363);
+    animation-name: moon2;
+}
+.moon3{
+    background-color: rgba(255, 255, 255, 0.245);
+    animation-name: moon3;
+}
+.moon, .moon1, .moon2, .moon3, .moon4{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+.mar-1{
+    margin: 30px;
+}
+.mar-2{
+    margin: 60px;
+}
+.group{
+    display: flex;
+    margin: 200px;
+}
+.mar-3{
+    margin: 90px;
+}
+.marl-1{
+    margin-left: 30px;
+}
+.marl-2{
+    margin-left: 60px;
+}
+.marl-3{
+    margin-left: 90px;
+}
+.fish1{
+    content: url("fish.png");
+    width: 20px;
+    height: auto;
+    margin: 40px;
+}
+.fish2{
+    content: url("fish\ \(1\).png");
+    width: 20px;
+    height: auto;
+    margin: 60px;
+}
+.fish3{
+    content: url("clown-fish.png");
+    width: 20px;
+    height: auto;
+    margin: 10px;
+}
+@keyframes fish_move {
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(10vw);
+    }
+}
+@keyframes sinusidal {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+.sinu{
+    animation-name: sinusidal;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.fish1, .fish2 , .fish3, .content{
+    animation-name: fish_move;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    color: white;
+    border-color: black;
+    
+} 
+@keyframes submarine {
+    from{
+        transform: translate(500px, 100px);
+    }
+    to{
+        transform: translate(200px, 100px);
+    }
+}
+@keyframes submarineR {
+    from{
+        transform: translate(0px, -200px);
+    }
+    to{
+        transform: translate(700px, -200px)
+        
+    }
+}
+.design_water img{
+    width: 150px;
+}
+.plants{
+    justify-self: end;
+    position: relative;
+    transform: translateX(-100px);
+}
+.plants img{
+    width: 40px;
+}
+.sub1{
+    animation-name: submarine;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.sub2{
+    animation-name: submarineR;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    transform: translateY(-200px);
+    position: relative;
+}
+.bubbles{
+    display: flex;   
+}
+@keyframes bubble1{
+    from{
+        transform: translate(150px, -60px);
+    }
+    to{
+        transform: translate(200px, -70px);
+    }
+}
+@keyframes bubble2{
+    from{
+        transform: translate(150px, -60px);
+    }
+    to{
+        transform: translate(200px, -65px);
+    }
+}
+@keyframes bubble3{
+    from{
+        transform: translate(150px, -60px);
+    }
+    to{
+        transform: translate(200px, -50px);
+    }
+}
+@keyframes bubble4{
+    from{
+        transform: translate(150px, -60px);
+    }
+    to{
+        transform: translate(200px, -40px);
+    }
+}
+.bubble{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    transform: translate(150px, -60px);
+    border-radius: 50%;
+}
+.b-1{
+    animation-name: bubble1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-delay: 0.3s;
+}
+.b-2{
+    animation-name: bubble2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-delay: 0.4s;
+}
+.b-3{
+    animation-name: bubble3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-delay: 0.8s;
+}
+.b-4{
+    animation-name: bubble4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+@keyframes bubbler1{
+    from{
+        transform: translate(10px, -60px);
+    }
+    to{
+        transform: translate(-40px, -70px);
+    }
+}
+@keyframes bubbler2{
+    from{
+        transform: translate(10px, -60px);
+    }
+    to{
+        transform: translate(-40px, -65px);
+    }
+}
+@keyframes bubbler3{
+    from{
+        transform: translate(10px, -60px);
+    }
+    to{
+        transform: translate(-40px, -50px);
+    }
+}
+@keyframes bubbler4{
+    from{
+        transform: translate(10px, -60px);
+    }
+    to{
+        transform: translate(-40px, -40px);
+    }
+}
+.br-1{
+    animation-name: bubbler1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+.br-2{
+    animation-name: bubbler2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+}
+.br-3{
+    animation-name: bubbler3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+}
+.br-4{
+    animation-name: bubbler4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
